@@ -15,6 +15,8 @@
 @property (nonatomic, retain) NSTimer    *pulseTimer;
 @property (strong, nonatomic) id target;
 
+@property (strong, nonatomic) NSMutableArray *peripheralArray;
+
 
 @end
 
@@ -32,6 +34,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        _peripheralArray = [NSMutableArray new];
     }
     return self;
 }
@@ -47,6 +50,7 @@
 }
 
 #pragma mark - CBCentralManagerDelegate
+
 
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central
 
@@ -74,8 +78,8 @@
 // method called whenever you have successfully connected to the BLE peripheral
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral
 {
-    [peripheral setDelegate:self];
-    [peripheral discoverServices:nil];
+    //[peripheral setDelegate:self];
+    //[peripheral discoverServices:nil];
     NSLog(@"%@", peripheral);
 }
 
@@ -84,12 +88,14 @@
     NSString *localName = [advertisementData objectForKey:CBAdvertisementDataLocalNameKey];
     if ([localName length] > 0) {
         NSLog(@"Found the: %@", localName);
-        [self.centralManager stopScan];
-        self.polarH7HRMPeripheral = peripheral;
-        
-        peripheral.delegate = self;
-        [self.centralManager connectPeripheral:peripheral options:nil];
-    }
+//        [self.centralManager stopScan];
+//        self.polarH7HRMPeripheral = peripheral;
+//        
+//        peripheral.delegate = self;
+//        [self.centralManager connectPeripheral:peripheral options:nil];
+        [_peripheralArray addObject:peripheral];
+        NSNotification *notification = [NSNotification notificationWithName:NEW_DEVICE_FOUND object:nil];
+        [[NSNotificationCenter defaultCenter] postNotification:notification];    }
 }
 
 
@@ -116,21 +122,8 @@
 
 #pragma mark - CBCharacteristic helpers
 
-// Instance method to get the heart rate BPM information
-- (void) getHeartBPMData:(CBCharacteristic *)characteristic error:(NSError *)error
-{
+- (NSMutableArray*)getCBPeripheralList {
+    return  _peripheralArray;
 }
-// Instance method to get the manufacturer name of the device
-- (void) getManufacturerName:(CBCharacteristic *)characteristic
-{
-}
-// Instance method to get the body location of the device
-- (void) getBodyLocation:(CBCharacteristic *)characteristic
-{
-}
-// Helper method to perform a heartbeat animation
-- (void)doHeartBeat {
-}
-
 
 @end

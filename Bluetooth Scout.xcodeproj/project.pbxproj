@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5887CC1F379DC500C0067F /* BSDeviceListController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5887CB1F379DC500C0067F /* BSDeviceListController.m */; };
+		FA5887CF1F379DE300C0067F /* BSDeviceListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5887CE1F379DE300C0067F /* BSDeviceListDataSource.m */; };
 		FAAFBC131F237EF100E002DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAFBC121F237EF100E002DB /* main.m */; };
 		FAAFBC161F237EF100E002DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAFBC151F237EF100E002DB /* AppDelegate.m */; };
-		FAAFBC191F237EF100E002DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAFBC181F237EF100E002DB /* ViewController.m */; };
 		FAAFBC1C1F237EF100E002DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAFBC1A1F237EF100E002DB /* Main.storyboard */; };
 		FAAFBC1E1F237EF100E002DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAFBC1D1F237EF100E002DB /* Assets.xcassets */; };
 		FAAFBC211F237EF100E002DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAFBC1F1F237EF100E002DB /* LaunchScreen.storyboard */; };
 		FAAFBC2F1F23804900E002DB /* BSBLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAFBC2E1F23804900E002DB /* BSBLEManager.m */; };
 		FAAFBC321F23806E00E002DB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAFBC311F23806E00E002DB /* CoreBluetooth.framework */; };
 		FAAFBC341F23807700E002DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAFBC331F23807700E002DB /* QuartzCore.framework */; };
+		FAEE7ED51F37BD9C00F1FE68 /* BSDeviceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEE7ED41F37BD9C00F1FE68 /* BSDeviceListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA5887CA1F379DC500C0067F /* BSDeviceListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDeviceListController.h; sourceTree = "<group>"; };
+		FA5887CB1F379DC500C0067F /* BSDeviceListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDeviceListController.m; sourceTree = "<group>"; };
+		FA5887CD1F379DE300C0067F /* BSDeviceListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDeviceListDataSource.h; sourceTree = "<group>"; };
+		FA5887CE1F379DE300C0067F /* BSDeviceListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDeviceListDataSource.m; sourceTree = "<group>"; };
 		FAAFBC0E1F237EF100E002DB /* Bluetooth Scout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bluetooth Scout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAFBC121F237EF100E002DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAAFBC141F237EF100E002DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAAFBC151F237EF100E002DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FAAFBC171F237EF100E002DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FAAFBC181F237EF100E002DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FAAFBC1B1F237EF100E002DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAAFBC1D1F237EF100E002DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAAFBC201F237EF100E002DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,6 +37,8 @@
 		FAAFBC2E1F23804900E002DB /* BSBLEManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBLEManager.m; sourceTree = "<group>"; };
 		FAAFBC311F23806E00E002DB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		FAAFBC331F23807700E002DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FAEE7ED31F37BD9C00F1FE68 /* BSDeviceListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDeviceListCell.h; sourceTree = "<group>"; };
+		FAEE7ED41F37BD9C00F1FE68 /* BSDeviceListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDeviceListCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +54,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA5887C91F379D9B00C0067F /* SelectDevice */ = {
+			isa = PBXGroup;
+			children = (
+				FA5887CA1F379DC500C0067F /* BSDeviceListController.h */,
+				FA5887CB1F379DC500C0067F /* BSDeviceListController.m */,
+				FA5887CD1F379DE300C0067F /* BSDeviceListDataSource.h */,
+				FA5887CE1F379DE300C0067F /* BSDeviceListDataSource.m */,
+			);
+			name = SelectDevice;
+			path = ../../../Gemicle/NesiaFerdman/NesiaFerdman/Models/DataModels/SelectDevice;
+			sourceTree = "<group>";
+		};
 		FAAFBC051F237EF100E002DB = {
 			isa = PBXGroup;
 			children = (
 				FAAFBC101F237EF100E002DB /* Bluetooth Scout */,
-				FAAFBC2A1F237F1D00E002DB /* New Group */,
 				FAAFBC0F1F237EF100E002DB /* Products */,
 				FAAFBC301F23806E00E002DB /* Frameworks */,
 			);
@@ -69,14 +86,12 @@
 		FAAFBC101F237EF100E002DB /* Bluetooth Scout */ = {
 			isa = PBXGroup;
 			children = (
-				FAAFBC2C1F237F3E00E002DB /* Images */,
 				FAAFBC2B1F237F3300E002DB /* Models */,
+				FAAFBC2C1F237F3E00E002DB /* Images */,
 				FAAFBC291F237F1A00E002DB /* Controllers */,
 				FAAFBC281F237F0E00E002DB /* Managers */,
 				FAAFBC141F237EF100E002DB /* AppDelegate.h */,
 				FAAFBC151F237EF100E002DB /* AppDelegate.m */,
-				FAAFBC171F237EF100E002DB /* ViewController.h */,
-				FAAFBC181F237EF100E002DB /* ViewController.m */,
 				FAAFBC1A1F237EF100E002DB /* Main.storyboard */,
 				FAAFBC1D1F237EF100E002DB /* Assets.xcassets */,
 				FAAFBC1F1F237EF100E002DB /* LaunchScreen.storyboard */,
@@ -106,20 +121,15 @@
 		FAAFBC291F237F1A00E002DB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA5887C91F379D9B00C0067F /* SelectDevice */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		FAAFBC2A1F237F1D00E002DB /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 		FAAFBC2B1F237F3300E002DB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FAEE7ED21F37BD7F00F1FE68 /* DeviceListCell */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,6 +148,16 @@
 				FAAFBC311F23806E00E002DB /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAEE7ED21F37BD7F00F1FE68 /* DeviceListCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAEE7ED31F37BD9C00F1FE68 /* BSDeviceListCell.h */,
+				FAEE7ED41F37BD9C00F1FE68 /* BSDeviceListCell.m */,
+			);
+			name = DeviceListCell;
+			path = ../../../Gemicle/NesiaFerdman/NesiaFerdman/Models/DataModels/SelectDevice/DeviceListCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,9 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAAFBC2F1F23804900E002DB /* BSBLEManager.m in Sources */,
-				FAAFBC191F237EF100E002DB /* ViewController.m in Sources */,
+				FAEE7ED51F37BD9C00F1FE68 /* BSDeviceListCell.m in Sources */,
 				FAAFBC161F237EF100E002DB /* AppDelegate.m in Sources */,
 				FAAFBC131F237EF100E002DB /* main.m in Sources */,
+				FA5887CC1F379DC500C0067F /* BSDeviceListController.m in Sources */,
+				FA5887CF1F379DE300C0067F /* BSDeviceListDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +397,7 @@
 				FAAFBC271F237EF100E002DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

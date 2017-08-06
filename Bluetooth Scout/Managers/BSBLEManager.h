@@ -10,10 +10,14 @@
 @import CoreBluetooth;
 @import QuartzCore;
 
+#define NEW_DEVICE_FOUND @"kNewDeviceFound"
+
 @interface BSBLEManager : NSObject
 
 + (BSBLEManager*)sharedManager;
 
 - (void)scanForDevice;
+
+- (NSMutableArray*)getCBPeripheralList;
 
 @end

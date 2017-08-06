@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3800B4880073F498E00BD867FA584B6599927130",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3800B4880073F498E00BD867FA584B6599927130" : 9223372036854775807,
+    "7A2BB12B85B8151E4E41AED6AF0849DE48771086" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A68D1039-8689-4205-B041-23D85F2EC1C0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3800B4880073F498E00BD867FA584B6599927130" : "StartUp\/",
+    "7A2BB12B85B8151E4E41AED6AF0849DE48771086" : "Gemicle\/NesiaFerdman\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Bluetooth Scout",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Bluetooth Scout.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ShitikovAlexandr\/BLE-Scout.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3800B4880073F498E00BD867FA584B6599927130"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ShitikovAlexandr\/NesiaFerdman.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7A2BB12B85B8151E4E41AED6AF0849DE48771086"
+    }
+  ]
+}
